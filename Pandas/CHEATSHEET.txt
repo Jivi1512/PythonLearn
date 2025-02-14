@@ -1,0 +1,24 @@
+CHEATSHEET:
+
+file=pd.read_csv("path")		READ CSV FILES
+file=pd.read_json("path")		READ JSON FILES
+file=pd.read_excel("path")		READ EXCEL SHEET
+
+print(file.to_string)			PRINT ENTIRE DATA
+
+Series is a COLUMN, Dataframe is a TABLE
+
+d.dropna():                             REMOVE ROWS WITH NULL VALUES
+d.drop(subset=["column_name"])          DELETE ROWS WITH NULL VALUES IN SPECIFIC COLUMN
+d.fillna(value):                        REPLACE EMPTY VALUES
+d.loc[row_num,'column_name']=newvalue:  REPLACING DATA
+
+x=d["column_name"].mean()		AVERAGE VALUE
+x=d["column_name"].mode()		MOST OCCURING VALUE
+
+print(d.duplicated)                     RETURNS TRUE IF DUPLICATE ROW
+d.drop_duplicates                       DELETE DUPLICATES
+
+print(d.corr())				DISPLAYS CORRELATION
+
+
